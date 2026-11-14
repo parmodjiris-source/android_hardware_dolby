@@ -38,7 +38,6 @@ PRODUCT_ODM_PROPERTIES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     audio.spatializer.effect.util_clamp_min=300 \
-    debug.c2.use_dmabufheaps=1 \
     persist.vendor.audio.dolby.tws_tuning=true \
     persist.vendor.audio.effectimplenter=dolby \
     persist.vendor.audio.spatializer.speaker_enabled=true \
@@ -48,11 +47,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.audio.spatializer_transaural_enabled_default=false \
     ro.audio.stereo_spatialization_enabled=true \
     ro.vendor.dolby.dax.version=DAX3_3.12.0.8_r1 \
-    vendor.audio.c2.preferred=true \
-    vendor.audio.dolby.ds2.enabled=false \
-    vendor.audio.dolby.ds2.hardbypass=false \
-    vendor.qc2audio.per_frame.flac.dec.enabled=true \
-    vendor.qc2audio.suspend.enabled=true
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DOLBY_PATH)/sepolicy/vendor
